@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<style>
+    h1, h2, p {
+        text-align: center;
+    }
+    .botoes{
+        display: flex;
+        justify-content: center;
+    }
+    .botoes button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+</style>
+<html lang="en-us" ng-app="myApp">
+    <head>
+        <title>Será que o AngularJS funciona com ES6?</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        
+        <!-- load angular via CDN -->
+        <script src="http://code.angularjs.org/1.8.2/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="mainController">
+        <p>{{resultado}}</p>
+    </body>
+</html>

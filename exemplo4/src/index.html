@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+    <head>
+        <title>Mais exemplos!</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        
+        <!-- load angular via CDN -->
+        <script src="http://code.angularjs.org/1.8.2/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="mainController">
+        <h1>Pesquisar produtos por categoria</h1>
+        <input ng-model="categoriaBuscar"></input>
+        <produtos-categoria categoria="categoriaBuscar" resultado="resultadoRetornou(res)"></produtos-categoria>
+        <p>{{resultadosEncontrados}} resultados encontrados</p>
+    </body>
+</html>
+
+
+
+
+

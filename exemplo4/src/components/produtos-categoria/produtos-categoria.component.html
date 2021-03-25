@@ -1,0 +1,11 @@
+<p>
+  <b>Categoria digitada:</b> {{$ctrl.categoria}}
+</p>
+<div ng-if="$ctrl.categoria">
+  <p>
+    <b>Resultados:</b>
+  </p>
+  <p ng-repeat="item in $ctrl.massa[$ctrl.categoria]">
+    {{item}}
+  </p>  
+</div>
